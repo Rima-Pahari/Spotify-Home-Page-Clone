@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Picture/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <!-- total body -->
+    <div class="main">
+        <!-- left hand bar -->
+        <div class="sidebar">
+            <!-- top box -->
+            <div class="nav">
+                <div class="nav_option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <!-- remaining part -->
+            <div class="library">
+                <!-- top part -->
+                <div class="options">
+                    <div class="lib_option nav_option">
+                        <img src="./Picture/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-- remaining boxes -->
+                <div class="lib_box">
+                    <div class="box">
+                        <p class="box_p1">Create your first playlist</p>
+                        <p class="box_p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box_p1">Let's find some podcasts to follow</p>
+                        <p class="box_p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right portion -->
+        <div class="main_content">
+            <!-- nav bar -->
+            <div class="main_sticky">
+                <!-- upper nav -->
+                <div class="sticky_nav">
+                    <div class="sticky_nav_icons">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <i class="fa-solid fa-angle-right hide"></i>
+                    </div>
+                    <div class="sticky_nav_options">
+                        <button class="badge nav_item hide">Explore Premium</button>
+                        <button class="badge nav_item dark_badge"><i class="fa-regular fa-circle-down" style="margin-right: 7px;"></i> Install App</button>
+                        <i class="fa-regular fa-bell nav_item"></i>
+                        <i class="fa-regular fa-user nav_item"></i>
+                    </div>
+                </div>
+                <!-- lower nav -->
+                <div >
+                    <button class="d_badge">All</button>
+                    <button class="d_badge gray_badge">Music</button>
+                    <button class="d_badge gray_badge">Podcasts</button>
+                </div>
+            </div>
+            <!-- scrollable portion -->
+            <div class="card_head">
+                <h2 class="card_contain_head">Shows to try</h2>
+                <h5>Show all</h5>
+            </div>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="./Picture/MoneyWithMonika.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">Let's Talk Money...</p>
+                    <p class="card_info">Monika Halan</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/AsliAkhada.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">Asli Akhada</p>
+                    <p class="card_info">Wrestle Chatter | Wrestle India</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/NDTVProfit.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">All You Need To...</p>
+                    <p class="card_info">NDTV Profit</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/MMAShow.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">The Ringer MMA...</p>
+                    <p class="card_info">The RInger</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/LukeCoutinho.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">The Luke Countinh...</p>
+                    <p class="card_info">Luke Coutinho</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/RestIsHistory.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">The Rest Is History</p>
+                    <p class="card_info">Goalhanger Podcasts</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/GopiSudhakar.jpeg" alt="" class="card_img">
+                    <p class="card_title_noplay">Gopi Sudhakar...</p>
+                    <p class="card_info">Sportify Studios</p>
+                </div>
+            </div>
+            <h2 class="card_contain_head">Recently played</h2>
+            <div class="cards_container">
+                <div class="card recent_play">
+                    <img src="./Picture/Top50India.jpg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play">
+                    <p class="card_title">Top 50 - India</p>
+                    <p class="card_info">Your daily update of the most played tracks rig...</p>
+                </div>
+            </div>
+            <div class="card_head">
+                <h2 class="card_contain_head">Try something else</h2>
+                <h5>Show all</h5>
+            </div>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="./Picture/HotHitsHindi.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Hot Hits Hindi</p>
+                    <p class="card_info">Hottest Hindi music served here. Cover...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/00sHindi.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">All Out 00's Hindi</p>
+                    <p class="card_info">Bolloywood songs that ruled hearts in...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/HotHitsPunjabi.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Hot Hits Punjabi</p>
+                    <p class="card_info">Catch the hottest Punjabi tracks with...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/Bolloywood central.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Bolloywood...</p>
+                    <p class="card_info">Bolloywood Central, jab baje toh seedh...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/ArijitSingh.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">This is Arijit Singh</p>
+                    <p class="card_info">Bolloywood crooner's essential...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/TrendingNowIndia.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Trending Now...</p>
+                    <p class="card_info">Every track you're listening/should b...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/OldIsGold.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Old is Gold</p>
+                    <p class="card_info">Soulful Hindi songs for your nostalgic journey...</p>
+                </div>
+            </div>
+            <h2 class="card_contain_head">Featured charts</h2>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="./Picture/TopSongsIndia.jpg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Top Songs - India</p>
+                    <p class="card_info">Your weekly update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/Viral50India.jpg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Viral 50 - India</p>
+                    <p class="card_info">Your daily update of the most viral trac...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/Top50Global.jpeg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Top 50 - Global</p>
+                    <p class="card_info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/TopSongsGlobal.jpg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Top Songs -...</p>
+                    <p class="card_info">Your weekly update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Picture/Viral50Global.jpg" alt="" class="card_img">
+                    <img src="./Picture/PlayButton.png" alt="" class="play p">
+                    <p class="card_title">Viral 50 - Global</p>
+                    <p class="card_info">Your daily update of the most viral trac...</p>
+                </div>
+            </div>
+            <!-- footer portion -->
+            <div class="footer">
+                <div class="up">
+                    <div>
+                        <p>Company</p>
+                        <span>About</span>
+                        <span>Jobs</span>
+                        <span>For the Record</span>
+                    </div>
+                    <div>
+                        <p>Communities</p>
+                        <span>For Artists</span>
+                        <span>Developers</span>
+                        <span>Advertising</span>
+                        <span>Investors</span>
+                        <span>Vendors</span>
+                    </div>
+                    <div>
+                        <p>Useful Links</p>
+                        <span>Support</span>
+                        <span>Free Mobile App</span>
+                    </div>
+                    <div>
+                        <p>Sportify Plans</p>
+                        <span>Premium Individual</span>
+                        <span>Premium Duo</span>
+                        <span>Premium Family</span>
+                        <span>Premium Student</span>
+                        <span>Sportify Free</span>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="down">
+                    <div>
+                        <span>Legal</span>
+                        <span>Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-copyright"></i>
+                        2024 Sportify AB
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- bottom fixed portion -->
+        <div class="music_player">
+            <!-- bottom left -->
+            <div class="album">
+                <img src="./Picture/Husn.jpg" alt="" class="song_pic">
+                <div class="song_info">
+                    <h5>Husn</h5>
+                    <h6>Anuv Jain</h6>
+                </div>
+                <img src="./Picture/plus.png" alt="" class="plus">
+            </div>
+            <!-- bottom middle -->
+            <div class="player">
+                <div class="player_controls">
+                    <img src="./Picture/player_icon1.png" alt="" class="player_control_icon">
+                    <img src="./Picture/player_icon2.png" alt="" class="player_control_icon">
+                    <img src="./Picture/player_icon3.png" alt="" class="player_control_icon mid" style="opacity: 1;height: 2rem;width: 2rem;">
+                    <img src="./Picture/player_icon4.png" alt="" class="player_control_icon">
+                    <img src="./Picture/player_icon5.png" alt="" class="player_control_icon">
+                </div>
+                <div class="playback_bar">
+                    <span class="time">0:00</span>
+                    <input type="range" min="0" max="100" class="progress_bar" step="1" value="0">
+                    <span class="time">3:37</span>
+                </div>
+            </div>
+            <!-- bottom right -->
+            <div class="controls">
+                <img src="./Picture/controls_icon1.png" alt="">
+                <img src="./Picture/controls_icon2.png" alt="">
+                <img src="./Picture/controls_icon3.png" alt="" style="height: 1rem;">
+                <img src="./Picture/controls_icon4.png" alt="" style="height: 1rem;">
+                <label for="id"><img src="./Picture/controls_icon5.png" alt=""></label>
+                <input type="range" min="0" max="100" step="1" id="id" value="0">
+                <img src="./Picture/controls_icon6.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
